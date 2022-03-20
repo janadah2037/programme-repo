@@ -1,0 +1,66 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Create a solar system</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 10px;
+        }
+        .planet {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+        .moon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgb(237, 237, 237);
+        }
+    </style>
+</head>
+<body>
+
+
+<script>
+    
+    var divEl1 = document.createElement ("div");
+        divEl1.className = "planet"
+        divEl1.style.backgroundColor = "blue";
+        document.body.appendChild(divEl1);
+
+      var divEl2 = document.createElement ("div");
+        divEl2.className = "moon"
+        divEl2.style.backgroundColor = "white"
+        divEl1.appendChild(divEl2);
+
+      var divEl3 = document.createElement ("div");
+        divEl3.className = "planet"
+        divEl3.style.backgroundColor = "red";
+        document.body.appendChild(divEl3)
+
+      var divEl4 = document.createElement ("div");
+        divEl4.className = "moon"
+        divEl4.style.backgroundColor = "white"
+        divEl3.appendChild (divEl4);
+
+      var divEl5 = document.createElement ("div");
+        divEl5.className = "planet"
+          divEl5.style.backgroundColor = "purple";
+          document.body.appendChild(divEl5);
+
+      var divEl6 = document.createElement ("div");
+          divEl6.className = "moon"
+          divEl6.style.backgroundColor = "white"
+          divEl5.appendChild(divEl6);
+</script>
+</body>
+</html>
